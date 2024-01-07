@@ -74,5 +74,3 @@ tester1 date =
   let modifiedDate = nextDay date
       avg = (numberLit date + numberLit modifiedDate) `div` 2
   in magic date && magic modifiedDate && avg == numberLit (nextMinute modifiedDate)
-
-main = print (filter tester1 generator1)

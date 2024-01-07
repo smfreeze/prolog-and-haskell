@@ -30,5 +30,3 @@ tester2 :: (String, String, String, String, String) -> Bool
 tester2 (s1, s2, s3, s4, s5)
   | (read s1 + read s3 + read s5 < 2000) && (read s1 - read s2 == read s3) && (read s3 - read s4 == read s5) = True
   | otherwise = False
-
-main = print (filter tester2 generator2)

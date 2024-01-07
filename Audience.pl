@@ -33,6 +33,3 @@ all_different([]).
 all_different([Head|Tail]) :-
     \+ memberchk(Head, Tail),
     all_different(Tail).
-
-main:-
-	generator3(N), tester3(N), write(N).
